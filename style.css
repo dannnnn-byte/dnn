@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+/* General Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +12,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: #1c1e53;
@@ -21,14 +23,11 @@ a:hover {
   color: #5e3bee !important;
 }
 
-h5 {
-  font-size: 20px;
-}
-
 li {
   list-style: none;
 }
 
+/* Header & Navigation */
 nav {
   z-index: 2;
   background-color: #fff;
@@ -92,6 +91,7 @@ nav button#menuButton {
   padding: 7px;
 }
 
+/* Main Section */
 .main {
   background-color: #deebee;
   padding: 90px 85px;
@@ -101,31 +101,6 @@ nav button#menuButton {
   gap: 40px;
   opacity: 0; /* Start hidden */
   animation: fadeIn 2s forwards;
-}
-
-.left h5,
-.left h3,
-.left p,
-.left button {
-  opacity: 0; /* Start hidden */
-  transform: translateY(20px); /* Start slightly shifted down */
-  animation: slideUp 0.6s forwards; /* Slide up animation */
-}
-
-.left h5 {
-  animation-delay: 0.5s;
-}
-
-.left h3 {
-  animation-delay: 1s;
-}
-
-.left p {
-  animation-delay: 1.5s;
-}
-
-.left button {
-  animation-delay: 2s;
 }
 
 .main .left {
@@ -160,6 +135,7 @@ nav button#menuButton {
   border-radius: 5px;
 }
 
+/* Right Section Image */
 .main .right img {
   width: 500px;
   opacity: 0; /* Start hidden */
@@ -167,6 +143,7 @@ nav button#menuButton {
   animation-delay: 2s; /* Delay the image animation */
 }
 
+/* Animations */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -186,6 +163,7 @@ nav button#menuButton {
   }
 }
 
+/* Skills Section */
 .skills {
   padding: 110px 85px 0;
 }
@@ -255,6 +233,7 @@ nav button#menuButton {
   color: #1c1e53;
 }
 
+/* About Section */
 .about {
   padding: 110px;
   display: flex;
@@ -276,6 +255,7 @@ nav button#menuButton {
   margin-top: 30px;
 }
 
+/* Portfolio Section */
 .portfolio {
   background-color: #deebee;
   padding: 110px 85px;
@@ -354,6 +334,7 @@ nav button#menuButton {
   font-size: 16px;
 }
 
+/* Feedback Section */
 .feedback {
   padding: 110px 85px;
 }
@@ -412,6 +393,7 @@ nav button#menuButton {
   font-size: 12px;
 }
 
+/* Footer */
 footer {
   background-color: #deebee;
   padding: 85px;
@@ -449,7 +431,9 @@ footer .bottom .links a {
   margin-left: 14px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1200px) {
+  /* Adjustments for smaller screens */
   .main .left h5 {
     font-size: 18px;
   }
@@ -505,6 +489,7 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 992px) {
+  /* Further adjustments for tablet/medium screens */
   nav button {
     display: none;
   }
@@ -552,6 +537,7 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 768px) {
+  /* Mobile Adjustments */
   nav {
     justify-content: space-between;
     padding: 0 42px;
@@ -581,10 +567,6 @@ footer .bottom .links a {
     padding: 85px 42px 0;
   }
 
-  .skills .skill-items {
-    gap: 8px;
-  }
-
   .about {
     padding: 85px 42px;
   }
@@ -612,6 +594,7 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 576px) {
+  /* Small Mobile Adjustments */
   nav ul li a {
     font-size: 13px;
   }
@@ -650,13 +633,13 @@ footer .bottom .links a {
   }
 }
 
+/* Skill Bar Styling */
 .beyonce h1 {
   text-align: center;
   margin-top: 50px;
 }
 
-.about-skillss
- {
+.about-skillss {
   min-width: 5rem;
   padding-left: 1rem;
 }
