@@ -268,8 +268,11 @@ nav button#menuButton {
 }
 
 .about .left img {
-  width: 440px;
+  width: 100%; /* Atur ke lebar 100% dari container */
+  max-width: 200px; /* Maksimal lebar 400px */
+  height: auto; /* Menjaga rasio aspek */
 }
+
 
 .about .right p {
   font-size: 16px;
@@ -477,7 +480,7 @@ footer .bottom .links a {
   }
 
   .about .left img {
-    width: 300px;
+    width: 215px;;
   }
 
   .skills h3,
@@ -506,7 +509,7 @@ footer .bottom .links a {
 
 @media screen and (max-width: 992px) {
   nav button {
-    display: none;
+    display: nonek;
   }
 
   nav ul {
