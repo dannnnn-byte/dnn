@@ -677,3 +677,18 @@ footer .bottom .links a {
   width: 100%;
   z-index: -1;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .skills .item, .portfolio .item {
+    flex: 1 1 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

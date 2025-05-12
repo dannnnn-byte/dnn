@@ -25,24 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     observer.observe(skillItems);
   }); 
-  
-function opensMenu() {
-    const audio = document.getElementById("background-audio");
-
-    if (!audio) {
-        console.error("Elemen audio tidak ditemukan!");
-        return;
-    }
-
-    audio.muted = false;
-    audio.play()
-        .then(() => {
-            console.log("Audio berhasil diputar!");
-        })
-        .catch(error => {
-            console.error("Audio gagal diputar:", error);
-        });
-}
 
 
 
