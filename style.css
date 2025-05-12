@@ -659,3 +659,15 @@ html, body {
   overflow-x: hidden;
   max-width: 100vw;
 }
+
+.portfolio .header {
+  display: flex;
+  justify-content: center; /* Untuk menyelaraskan konten ke tengah secara horizontal */
+  align-items: center; /* Untuk menyelaraskan konten ke tengah secara vertikal */ /* Mengatur tinggi header agar teks berada di tengah layar */
+  text-align: center; /* Agar teks di dalam h1 berada di tengah */
+}
+
+.portfolio .header .info h1 {
+  font-size: 30px; /* Atur ukuran font sesuai keinginan */
+  margin: 0; /* Menghilangkan margin agar teks pas di tengah */
+}
