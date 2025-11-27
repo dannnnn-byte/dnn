@@ -1,222 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Banner -->
   <div class="top-banner"></div>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#main">Home</a></li>
       <li><a href="#skills">Information</a></li>
-      <li><a href="#about-me">Aku</a></li>
+      <li><a href="#about-me">Profile</a></li>
       <li><a href="#portfolio">Projects</a></li>
     </ul>
+
     <button id="menuButton" onclick="openMenu()">
       <i class="bx bx-menu"></i>
     </button>
   </nav>
-    <div class="main" id="main">
-      <div class="left">
-        <h5>Halo gess, aku Dani</h5>
-        <h3>
-          Web ini <span>sekedar Perkenalan diri </span>
-         Salam kenal yaaa semua 👋!!
-        </h3>
+
+  <!-- Hero Section -->
+  <section class="main" id="main">
+    <div class="left">
+      <h5>Halo gess, aku Dani</h5>
+      <h3>
+        Web ini <span>sekadar perkenalan diri</span><br />
+        Salam kenal semuanya 👋!!
+      </h3>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+ <!-- Skills Section -->
+<section class="skills" id="skills">
+  <h2>Bahasa Utama Website</h2>
+
+  <div class="skill-items">
+
+    <div class="item">
+      <div class="icon"><i class="bx bxl-html5"></i></div>
+      <h4>HTML (HyperText Markup Language)</h4>
+      <p>
+        HTML adalah bahasa markup dasar untuk membangun struktur halaman web.
+      </p>
     </div>
 
-    <div class="skills" id="skills">
-      <h2>Bahasa Utama Website (For Information)</h2>
-      <div class="skill-items">
-        <div class="item">
-          <div class="icon">
-            <i class="bx bxl-html5"></i>
-          </div>
-          <h4>Html (HyperText Markup Language)</h4>
-          <p>
-            HTML adalah bahasa markup yang digunakan untuk membangun struktur dasar dari sebuah halaman web.HTML bertindak sebagai fondasi dari semua elemen visual di situs web.
-          </p>
-        </div>
-  
-        <div class="item">
-          <div class="icon">
-            <i class="bx bxl-css3"></i>
-          </div>
-          <h4>Css (Cascading Style Sheets)</h4>
-          <p>
-            CSS adalah bahasa yang digunakan untuk menata tampilan dari elemen-elemen HTML di halaman web. Dengan CSS, kita bisa mengatur warna, ukuran font, tata letak, dan animasi dari elemen-elemen pada halaman.
-          </p>
-        </div>
-
-        <div class="item">
-          <div class="icon">
-            <i class='bx bxl-javascript'></i>
-          </div>
-          <h4>JS (JavaScript)</h4>
-          <p>
-            JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan fungsi dinamis ke situs web. Dengan JavaScript, kita bisa membuat konten berubah secara otomatis, menangani input pengguna, berkomunikasi dengan server, dan banyak lagi. 
-          </p>
-        </div>
-    </div>
-    <div>
-    <div style="text-align: center; margin-top: 20px;">
-  <a href="https://www.revou.co/panduan-teknis/bahasa-pemrograman" target="_blank">
-    <button style="padding: 7px 10px; font-size: 11px; cursor: pointer;">
-      <i class="fas fa-book-open" style="margin-right: 8px;"></i>
-      Baca Lebih Lanjut
-    </button>
-  </a>
-</div>
-
-    </div>
-      </div>
-    <div class="about" id="about-me">
-      <div class="left">
-        <img src="Dani.jpg"/>
-      </div>
-      <div class="right">
-        <h3>Tentang Aku</h5>
-        <p><ul><h6>
-          <li>Nama                   : Mohammad Dani Ferdiansyah</li><br />
-          <li>Jenis Kelamin          : Laki-laki </li><br />
-          <li>Tempat, Tahun Lahir    : Bangkalan, 2005 </li><br />
-          <li>Kewarganegaraan        : Indonesia </li><br />
-          <li>Tinggi, Berat Badan    : 173 cm, 58 kg </li><br />
-          <li>Agama                  : Islam </li><br />
-          <li>Alamat                 : Desa Karang Anyar, Madura</li><br />
-          <li>Makanan, Minuman Favorit : Masakan Ebok dan Kopi</li><br />
-          <li>Hobi                   : Futsal, Lari, Badminton, Jelajah, Riding</li><br/>
-          <li>Cita Cita              : Engineer / Engineering</li><br/>
-          <li>Email                  : novacitra54@gmail.com </li><br/>
-        </p></ul></h6>
-     
+    <div class="item">
+      <div class="icon"><i class="bx bxl-css3"></i></div>
+      <h4>CSS (Cascading Style Sheets)</h4>
+      <p>
+        CSS digunakan untuk mengatur tampilan, warna, gaya, dan layout halaman web.
+      </p>
     </div>
 
-    <section class="education-section">
-  <div class="edu-header">
-    <h1>Pendidikan</h1>
+    <div class="item">
+      <div class="icon"><i class='bx bxl-javascript'></i></div>
+      <h4>JavaScript</h4>
+      <p>
+        JavaScript menambahkan interaktivitas dan fungsi dinamis ke website.
+      </p>
+    </div>
+
   </div>
-  <div class="edu-timeline">
-    <div class="edu-item animate">
-      <div class="circle"></div>
-      <div class="edu-content">
-        <h3>SDN BLEGA 4</h3>
-        <p>2012 — 2018</p>
-      </div>
-    </div>
 
-    <div class="edu-item animate">
-      <div class="circle"></div>
-      <div class="edu-content">
-        <h3>SMP NEGERI 1 BLEGA</h3>
-        <p>2018 — 2021</p>
-      </div>
-    </div>
-
-    <div class="edu-item animate">
-      <div class="circle"></div>
-      <div class="edu-content">
-        <h3>SMA NEGERI 1 BLEGA</h3>
-        <p>IPA</p>
-        <p>2021 — 2024</p>
-      </div>
-    </div>
-    <div class="edu-item animate">
-      <div class="circle"></div>
-      <div class="edu-content">
-        <h3>UNIVERSITAS TRUNOJOYO MADURA</h3>
-        <p>INFORMATIC'S ENGINEERING</p>
-        <p>2024 — SEKARANG</p>
-      </div>
-    </div>
+    <div class="read-more" style="text-align:center; margin-top:20px;">
+    <a href="https://www.revou.co/panduan-teknis/bahasa-pemrograman" target="_blank">
+      <button class="btn-small">
+        <i class="bx bx-book-open"></i> Baca Lebih Lanjut
+      </button>
+    </a>
   </div>
+
+  <!-- Skill Meter -->
+  <h2 style="margin-top:40px;">Skill Development</h2>
+
+  <div class="meter-box">
+
+    <div class="meter">
+      <div class="label">
+        <h4>Front-End</h4>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width:70%;"></div>
+      </div>
+    </div>
+
+    <div class="meter">
+      <div class="label">
+        <h4>Back-End</h4>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width:48%;"></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Skill Meter -->
 </section>
 
 
-    <div class="portfolio" id="portfolio">
-      <div class="header">
-        <div class="info">
-          <h1>My Projects</h1>
+  <!-- About Section -->
+  <section class="about" id="about-me">
+    <div class="left">
+      <img src="Dani.jpg" alt="Foto Dani" />
+    </div>
+
+    <div class="right">
+      <h3>Tentang Aku</h3>
+
+      <ul class="bio-list">
+        <li><strong>Nama:</strong> Mohammad Dani Ferdiansyah</li>
+        <li><strong>Jenis Kelamin:</strong> Laki-laki</li>
+        <li><strong>Tempat, Tahun Lahir:</strong> Bangkalan, 2005</li>
+        <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+        <li><strong>Tinggi / Berat:</strong> 173cm / 58kg</li>
+        <li><strong>Alamat:</strong> Desa Karang Anyar, Madura</li>
+        <li><strong>Makanan/Minuman Favorit:</strong> Masakan Ebok & Kopi</li>
+        <li><strong>Hobi:</strong> Futsal, Lari, Badminton, Jelajah, Riding</li>
+        <li><strong>Cita-Cita:</strong> TNI AL </li>
+        <li><strong>Email:</strong> novacitra54@gmail.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education-section">
+    <h1 class="edu-header">Pendidikan</h1>
+
+    <div class="edu-timeline">
+
+      <div class="edu-item">
+        <div class="circle"></div>
+        <div class="edu-content">
+          <h3>SDN BLEGA 4</h3>
+          <p>2012 — 2018</p>
         </div>
       </div>
 
-      <div class="portfo-items">
-        <div class="item">
-          <img src="WhatsApp Image 2025-05-13 at 00.50.17_b45288ee.jpg" />
-          <div class="info">
-            <h4>Website Angkatan</h4>
-           <li><strong style="color: rgb(17, 214, 236);">🔒 Locked (Privasi)</strong></li>
-
-          </div>
-        </div>
-        
-        <div class="item">
-          <img src="Screenshot 2024-12-06 090933.png" />
-          <div class="info">
-            <h4>Tugas Web Statis</h4>
-            <a href="https://dannnnn-byte.github.io/mathdiskrit/"
-            target="_blank">View<i class="bx bx-link-external"></i
-            ></a>
-          </div>
-         </div>
-         
-        <div class="item">
-          <img src="Screenshot 2025-05-10 135420.png" />
-          <div class="info">
-            <h4>Alarm Sederhana</h4>
-            <a href="https://dannnnn-byte.github.io/alarm/"
-            target="_blank">View<i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        
-    </div>
-
-    <div class="feedback" id="feedback">
-  <h3>Quotes of The Day</h3>
-  <div class="customers">
-    <div class="item">
-      <p>
-       "terimakasih sudah datang walaupun hanya sementara, tetapi bisa menjadi alasan untuk tawa, senang dan suka" <p>- Klabangan MDPL -</p>
-      </p>      
-      <div class="user">
-        <img src="Agung.jpg" />
-        <div class="info">
-          <h5>Agung Simanjuntak</h5>
+      <div class="edu-item">
+        <div class="circle"></div>
+        <div class="edu-content">
+          <h3>SMP Negeri 1 Blega</h3>
+          <p>2018 — 2021</p>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <p>
-        "meski akhirnya tak bisa mencapaimu, tidak tumbuh bersamamu, senang rasanya bisa menemukanmu didunia yang luas ini" <p>- BanyuAyu MDPL -</p>
-      </p>
-      <div class="user">
-        <img src="Abror.jpg"/>
-        <div class="info">
-          <h5>Abong Dermawan</h5>
+
+      <div class="edu-item">
+        <div class="circle"></div>
+        <div class="edu-content">
+          <h3>SMA Negeri 1 Blega</h3>
+          <p>Jurusan IPA</p>
+          <p>2021 — 2024</p>
         </div>
       </div>
+
+      <div class="edu-item">
+        <div class="circle"></div>
+        <div class="edu-content">
+          <h3>Universitas Trunojoyo Madura</h3>
+          <p>Informatics Engineering</p>
+          <p>2024 — Sekarang</p>
+        </div>
+      </div>
+
     </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="portfolio" id="portfolio">
+    <div class="header">
+      <h1>My Projects</h1>
+    </div>
+
+    <div class="portfo-items">
+
+      <div class="item">
+        <img src="WhatsApp Image 2025-05-13 at 00.50.17_b45288ee.jpg" alt="Project" />
+        <div class="info">
+          <h4>Website Angkatan</h4>
+          <p><strong style="color:#11d6ec;">🔒 Locked (Privasi)</strong></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Screenshot 2024-12-06 090933.png" alt="Web Statis" />
+        <div class="info">
+          <h4>Tugas Web Statis</h4>
+          <a href="https://dannnnn-byte.github.io/mathdiskrit/" target="_blank">
+            View <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Screenshot 2025-05-10 135420.png" alt="Alarm Web" />
+        <div class="info">
+          <h4>Alarm Sederhana</h4>
+          <a href="https://dannnnn-byte.github.io/alarm/" target="_blank">
+            View <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://img.freepik.com/vektor-gratis/segera-hadir-gaya-grunge-abstrak-dengan-percikan-hitam_1017-26690.jpg?semt=ais_hybrid&w=740&q=80" alt="coming soon" />
+        <div class="info">
+          <h4>Coming Soon</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Github Button -->
+  <div class="header" style="text-align:center;">
+    <a href="https://github.com/modanif/dn" target="_blank">
+      <button><i class="bx bxl-github"></i> Visit My Github</button>
+    </a>
   </div>
-</div>
-      <div class="header">
-        <a href="https://github.com/modanif/dn" target="_blank">
-          <button><i class="bx bxl-github"></i> Visit My Github</button>
-        </a>
-      </div>
 
-     <footer>
-      <p>© 2025  | Sesungguhnya kita adalah milik Allah, dan sesungguhnya kepada-Nyalah kita akan kembali</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 | Sesungguhnya kita adalah milik Allah, dan kepada-Nya kita kembali.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

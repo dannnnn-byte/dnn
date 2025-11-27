@@ -1,34 +1,27 @@
+// Menu Responsive
 function openMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
+  const nav = document.querySelector("nav ul");
+  nav.classList.toggle("active");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector(".main").style.opacity = "1";
-  });
+// Animation simple saat scroll (fade-in)
+const elements = document.querySelectorAll(".item, .edu-item, .about, .skills");
 
-  document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector(".main").style.opacity = "1";
-
-    const skillItems = document.querySelector(".skill-items");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target); // Stop observing once it's shown
-        }
-      });
-    }, {
-      threshold: 0.1 // Trigger when 10% of the item is visible
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
     });
+  },
+  { threshold: 0.2 }
+);
 
-    observer.observe(skillItems);
-  }); 
-
-
-
-
-  
-
-  
+elements.forEach((el) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(30px)";
+  el.style.transition = "1s ease";
+  observer.observe(el);
+});
